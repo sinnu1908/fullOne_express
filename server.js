@@ -17,7 +17,7 @@ server.use(employeeRoutes)
 
 
 
-server.listen(process.env.port,async()=>{
+server.listen(process.env.port||5050,async()=>{
 
     try {
         await connection;
