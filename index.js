@@ -17,12 +17,12 @@ server.use(employeeRoutes)
 
 
 
-server.listen(process.env.port||5050,async()=>{
+server.listen(process.env.port,async()=>{
 
     try {
         await connection;
-        // console.log(`server is running at port ${process.env.port}`);
-        // console.log("db is connected to the server")     
+        console.log(`server is running at port ${process.env.port}`);
+        console.log("db is connected to the server")     
     } catch (error) {  
         res.status(400).json({error})
     }
