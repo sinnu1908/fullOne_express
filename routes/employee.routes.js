@@ -8,7 +8,7 @@ const employeeRoutes=express.Router();
 
 
 employeeRoutes.post("/employees",registerEmployee);
-employeeRoutes.get("/dashboard",auth,getEmployee)
+employeeRoutes.get("/dashboard",getEmployee)
 
 
 module.exports={
