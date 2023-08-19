@@ -8,8 +8,8 @@ const userRoutes=express.Router();
 
 
 userRoutes.post("/signup",registerUser);
-userRoutes.post("/signin",loginUser)
-userRoutes.post("/logout",logoutU)
+userRoutes.post("/signin",loginUser);
+userRoutes.post("/logout",logoutU);
 
 
 
